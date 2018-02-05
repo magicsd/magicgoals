@@ -1,4 +1,4 @@
-import { SIGNED_IN, SET_GOALS } from '../constants'
+import { SIGNED_IN, SET_GOALS, SET_COMPLETED} from '../constants'
 
 export function logUser(email) {
   return {
@@ -13,6 +13,15 @@ export function setGoals(goals) {
     type: SET_GOALS,
     payload: {
       goals
+    }
+  }
+}
+
+export function setCompleted(completeGoals) {
+  return {
+    type: SET_COMPLETED,
+    payload: {
+      completeGoals
     }
   }
 }

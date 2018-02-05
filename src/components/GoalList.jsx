@@ -23,7 +23,7 @@ class GoalList extends Component {
     // console.log('this.props.goals', this.props.goals);
     return (
       <div>
-        <h4>Список победителя</h4>
+        <h4>Актуальный список</h4>
         {
         this.props.goals.map((goal, index) => {
           return (
